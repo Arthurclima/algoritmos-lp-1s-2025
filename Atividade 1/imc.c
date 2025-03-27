@@ -2,13 +2,13 @@
 #include <math.h>
 int main () {
 
-double imc, peso, altura;
+float imc, peso, altura;
 printf("Digite o peso:");
-scanf("%lf", &peso);
+scanf("%f", &peso);
 printf("Digite a altura:");
-scanf("%lf", &altura);
+scanf("%f", &altura);
 imc = peso /(altura*altura);
-printf("O imc eh: %.2lf\n", imc);
+printf("O imc eh: %.2f\n", imc);
 
 
 }
