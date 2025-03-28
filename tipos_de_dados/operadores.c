@@ -11,8 +11,8 @@ int main(int argc, char* argv[]){
     scanf("%f", &n2);
 
     resultado_adicao = n1+n2;
-    
-    printf("O resultado eh: %f", resultado_adicao);
+
+    printf("O resultado eh: %.0f\n", resultado_adicao);
 
 
 
