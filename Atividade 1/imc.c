@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-int main () {
+int main (int argc, char* argv[]){
 
 float imc, peso, altura;
 printf("Digite o peso:");
