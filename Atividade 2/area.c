@@ -83,5 +83,5 @@ int main(int agrc, char* argv[]){
             area = 0;
             break;
     }
-    printf("A = %.2f", area);
+    printf("A = %.2f\n", area);
 }
