@@ -25,4 +25,7 @@ else if (imc > 29.9 && imc <= 34.9 ) {
 else if (imc > 34.9 && imc <= 39.9) {
     printf("Classificacao: Obesidade Grau 2\n");
 }
+else {
+    printf("Classificacao: Obesidade Grau 3 (morbida)\n");
+}
 }
