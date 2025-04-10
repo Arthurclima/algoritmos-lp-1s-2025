@@ -2,7 +2,9 @@
 
 int main(int argc, char* argv[]){
     
-    int opcao, opcao_2, opcao_3;
+    int opcao, opcao_2, opcao_3, opcao_4;
+
+    do{
     printf("Escolha uma opcao de filme: \n");
     printf("1 - Leve\n");
     printf("2 - Intenso\n");
@@ -74,7 +76,13 @@ int main(int argc, char* argv[]){
      } else {
         printf("Opcao Invalida! \n");
      }
-
+     printf("Deseja escolher um novo filme? \n");
+     printf("1 - Sim \n");
+     printf("2 - Nao \n");
+     scanf("%d", &opcao_4);
+    }
+    while (opcao_4 == 1);
+    
     
     return 0;   
         
