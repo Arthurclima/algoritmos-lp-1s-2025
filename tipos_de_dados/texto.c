@@ -50,6 +50,6 @@ int main(int argc, char* argv[]){
 
     //concatena palavra
     strcat(palavra3, palavra4);
-    printf("Palavra 3 concatenada = %s", palavra3);
+    printf("Palavra 3 concatenada = %s\n", palavra3);
     return 0;
 }
