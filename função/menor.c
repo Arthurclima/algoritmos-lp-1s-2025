@@ -17,3 +17,5 @@ int main(int argc, char* argv[]){
             printf("menor (%d, %d, %d): %d", x, y, z, menor_3n(x, y, z));
     }
     return 0;
+
+}
