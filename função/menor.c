@@ -12,8 +12,8 @@ int main(int argc, char* argv[]){
             return 1;
     }
     if (argc == 3){
-            printf("menor (%d, %d): %d", x, z, maior_2n(x,z));
+            printf("menor (%d, %d): %d", x, z, menor_2n(x,z));
     }else{
-            printf("menor (%d, %d, %d): %d", x, y, z, maior_3n(x, y, z));
+            printf("menor (%d, %d, %d): %d", x, y, z, menor_3n(x, y, z));
     }
     return 0;
