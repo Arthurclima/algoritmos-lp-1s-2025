@@ -28,14 +28,13 @@ int maior_3n(int a, int b, int c){
 
 */
 
-int menor_2n(int a, int b){
-    int menor;
+int menor_2n(int a, int b){;
     if (a > b){
-        menor = b;
+        return b;
 
     }else {
-        menor = a; 
-    } return menor;
+        return a; 
+    };
         
 }
 
@@ -47,5 +46,23 @@ int menor_2n(int a, int b){
 
 int menor_3n(int a, int b, int c){
     int menor = menor_2n(a, b);
-    return menor_3n(menor, c);
+    return menor_2n(menor_2n (a,b), c);
+}
+
+/*
+
+    Verifica se um dado número é primo (1) ou não (0)
+
+*/
+int verificar_numero_primo(int n){
+
+    if((n%2 == 0) && (n != 2)){
+        return 0;
+    }
+    for(int i = 3; i < n; i += 2){
+        if(n % i == 0){
+            return 0;
+        }
+    }
+    return 1;
 }
