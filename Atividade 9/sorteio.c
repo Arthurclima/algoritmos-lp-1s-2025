@@ -6,11 +6,16 @@
 int main(int argc, char* argv[]){
     
     int numero_sorteado, i;
+    int numeros[0];
+    int numero_minimo = 0;
+    int numero_maximo = 10;
 
     srand(time(NULL));
-    for(i = 0; i < 3; i++){
+    for(i = 0; i < 1; i++){
         numero_sorteado = rand() %10;
-        printf("O numero sorteado foi: %d\n", numero_sorteado);
+        printf("O numero sorteado foi: %d\n", numeros[i]);
+        printf("o numero minimo eh: %d\n", numero_minimo);
+        printf("o numero maximo eh: %d\n", numero_maximo);
     }
 
         
