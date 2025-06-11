@@ -4,21 +4,44 @@
 #define max_txt 300
 
 int main(int argc, char* argv[]){
-    
-    int numero_sorteado, i;
-    int numeros[0];
-    int numero_minimo = 0;
-    int numero_maximo = 10;
+    int x, y, z;
 
-    srand(time(NULL));
-    for(i = 0; i < 1; i++){
-        numero_sorteado = rand() %10;
-        printf("O numero sorteado foi: %d\n", numeros[i]);
-        printf("o numero minimo eh: %d\n", numero_minimo);
-        printf("o numero maximo eh: %d\n", numero_maximo);
+    if(argc != 4){
+        printf("\n\tErro\n\tDigite apenas 3 argumentos\n\n");
+        return 1;
+    }else{
+        x = atoi(argv[1]);
+        y = atoi(argv[2]);
+        z = atoi(argv[3]);
+    }if(y <= x){
+        printf("\n\tErro\n\tO segundo argumento eh menor que o primeiro\n\n"); 
+        return 1;
+    }if(z < x || z > y){
+        printf("\n\tErro\n\tO terceiro argumento deve estar entre o primeiro e o segundo\n\n"); 
+        return 1;
     }
 
-        
+     const int n = y - x + 1;
+
+    srand(time(NULL));
+        int numero_sorteado = rand() % n + 1;
+
+    if(numero_sorteado == z){
+        printf("\n\tVoce foi sorteado\n\n");
+    }else{
+        printf("\n\tVoce nao foi sorteado\n\n");
+    }
+
+        FILE *sorteio = fopen("sorteio.txt", "a");
+    fprintf(sorteio, "\n\tMenor valor = %d\n", x);
+    fprintf(sorteio, "\tMaior valor = %d\n", y);
+    fprintf(sorteio, "\tChute = %d\n", z);
+    fprintf(sorteio, "\tNumero sorteado = %d\n", numero_sorteado);
+    if(numero_sorteado == z){
+        fprintf(sorteio, "\tO usuario foi sorteado\n");
+    }else{
+        fprintf(sorteio, "\tO usuario nao foi sorteado\n");
+    }
 
 
     
